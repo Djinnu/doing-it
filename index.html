@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal cheatsheet</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#tbl">Table Element</a></li>
+        <li><a href="#frm">Form Element</a></li>
+    </ul>
+  </nav>
+  <div class="maincontent">
+    <h1 id="tbl">Table elements and their descriptions</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Element's tag</th>
+                <th scope="col">Element's name</th>
+                <th scope="col">Element's description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scrope="row">&lt;table&gt;</th>
+                <td>Table</td>
+                <td>Defines HTML table</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;caption&gt;</th>
+                <td>Table caption</td>
+                <td>Defines a table caption</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;thead&gt;</th>
+                <td>Table head</td>
+                <td>A set of rows that define table's columns headings</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;tbody&gt;</th>
+                <td>Table body</td>
+                <td>Element that encapsulates a set of table rows, indicating that they make up the body of the table</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;tfoot&gt;</th>
+                <td>Table footer</td>
+                <td>Defines a set of rows summarizing the columns of the table</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;tr&gt;</th>
+                <td>Table row</td>
+                <td>Defines a row of cells in a table</td>
+            </tr>
+            <tr>
+                <th scrope="row">&lt;th&gt;</th>
+                <td>Table "row" header</td>
+                <td>Defines a cell as header of a group of table cells, exact nature of this group is defined by the scope attribute</td>
+            </tr>
+            <tr>
+                <th scope="row">&lt;td&gt;</th>
+                <td>Table data</td>
+                <td>Defines a cell of a table that contains data.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Need to know table attributes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Attribute</th>
+                <th scope="col">Attribute's name</th>
+                <th scope="col">Attribute's description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">colspan</th>
+                <td>Column span</td>
+                <td>Defines how many columns a td element should span</td>
+            </tr>
+            <tr>
+                <th scope="row">rowspan</th>
+                <td>Row span</td>
+                <td>Defines how many rows a td element should span.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="frm">Form element and all you need to know about it</h1>
+        <p>The form HTML element represents a document section containing interactive controls for submitting information. 
+        Once we have collected information in a form we can send that information somewhere else by using the action and method attribute.
+        The action attribute tells the form to send the information. A URL is assigned that determines the recipient of the information.
+        The method attribute tells the form what to do with that information once it’s sent.
+        An HTTP verb is assigned to the method attribute that determines the action to be performed.</p>
+        <p>The HTML &lt;input&gt; element is used to render a variety of input fields on a webpage including text fields, checkboxes, buttons, etc. &lt;input&gt; element have a type attribute that determines how it gets rendered to a page.</p>
+        <p>The HTML &lt;label&gt; element provides identification for a specific &lt;input&gt; based on matching values of the &lt;input&gt;‘s id attribute and the &lt;label&gt;‘s for attribute. By default, clicking on the &lt;label&gt; will focus the field of the related &lt;input&gt;.</p>
+    <h2 style="margin-top: 50px;">Input type attributes:</h2>
+      <div class="row">
+        <p class="definition column"><span>Text Type -</span> This renders a single row input field that users can type text inside.</p>
+        <div class="example column">
+              <lable for="txt"><em>text</em></lable>
+              <input type="text" name="txt">
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Password Type -</span> This renders a single row input field which allows the user to type censored text inside the field. It is used to type in sensitive information.</p>
+        <div class="example column">
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Number Type -</span> These input fields allow the user to enter only numbers and a few special characters inside the field.</p>
+        <div class="example column">
+            <input type="number" name="balance"> 
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Range Type -</span> A slider can be created by using the range type attribute.The range slider will act as a selector between a minimum and a maximum value. These values are set using the min and max attributes respectively. The slider can be adjusted to move in different steps or increments using the step attribute.</p>
+        <div class="example column">
+            <input type="range" name="movie-rating" min="0" max="10" step="0.1">
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Checkbox Type -</span> This will render a single checkbox item. To create a group of checkboxes related to the same topic, they should all use the same name attribute. Since it’s a checkbox, multiple checkboxes can be selected for the same topic.</p>
+        <div class="example column">
+            <input type="checkbox" name="breakfast" value="bacon">Bacon 🥓<br>
+            <input type="checkbox" name="breakfast" value="eggs">Eggs 🍳<br>
+            <input type="checkbox" name="breakfast" value="pancakes">Pancakes 🥞<br>
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Radio Button Type -</span> attribute that renders a single radio button. Multiple radio buttons of a related topic are given the same name attribute value. Only a single option can be chosen from a group of radio buttons.</p>
+        <div class="example column">
+            <input name="delivery_option" type="radio" value="pickup">
+            <input name="delivery_option" type="radio" value="delivery">
+        </div>
+      </div>
+    <h2>Additional form elements</h2>
+      <div class="row">
+        <p class="definition column"><span>&lt;select&gt; Element -</span> This element can be used to create a dropdown list. A list of choices for the dropdown list can be created using one or more &lt;option&gt; elements. By default, only one &lt;option&gt; can be selected at a time.</p>
+        <div class="example column">
+            <select name="rental-option">
+                <option value="small">Small</option>
+                <option value="family">Family Sedan</option>
+                <option value="lux">Luxury</option>
+              </select>
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>&lt;datalist&gt; Element -</span> When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an &lt;input&gt; with a &lt;datalist&gt;. To pair a &lt;input&gt; with a &lt;datalist&gt; the &lt;input&gt;’s list value must match the value of the id of the &lt;datalist&gt;. The datalist element is used to store a list of &lt;option&gt;s.</p>
+        <div class="example column">
+            <input list="ide" placeholder="Visual Studio Code">
+            <datalist id="ide">
+              <option value="Visual Studio Code" />
+              <option value="Atom" />
+              <option value="Sublime Text" />
+            </datalist>
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>&lt;textarea&gt; Element -</span> The textarea element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the rows and cols attributes which determine the height and width, respectively, of the element.</p>
+        <div class="example column">
+            <textarea rows="10" cols="30" name="comment" placeholder="Donka imeb"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <p class="definition column"><span>Submittable Input -</span> HTML &lt;input&gt; elements can have a type attribute set to submit, by adding type="submit". With this attribute included, a submit button will be rendered and, by default, will submit the &lt;form&gt; and execute its action. The text of a submit button is set to Submit by default but can also be changed by modifying the value attribute.</p>
+        <div class="example column">
+            <input class="myButton" type="submit" value="Mraven is UngaBunga">
+        </div>
+      </div>
+  </div>
+  <footer>
+      <h3>That's it folks, now how am i going to make it look fancier?</h3>
+  </footer>
+</body>
+</html>
