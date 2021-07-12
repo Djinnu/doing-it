@@ -1,0 +1,135 @@
+body {
+    font-size: 18px;
+    font-family: arial;
+    background: rgb(241, 250, 255);
+    margin: auto;
+}
+
+.maincontent {
+    position: relative;
+    margin: 100px auto 50px;
+    min-width: 1600px;
+    max-width: 1600px;
+}
+
+a {
+   color: white;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid white;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    z-index: 2;
+}
+
+li {
+    display: inline;
+    margin-left: 100px;
+    color: white;
+}
+
+table {
+    border: 2px solid #1C6EA4;
+    margin: 2.5rem auto 4rem;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #1C6EA4;
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background: #eee;
+}
+
+tbody tr:hover {
+    background: rgb(177, 199, 199);
+}
+
+thead{
+    background: rgb(142, 169, 215);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+input {
+    border: 3px solid #1C6EA4;
+}
+
+input:hover {
+    background: rgb(220, 247, 247);
+}
+
+.myButton {
+    color: rgb(255, 255, 255); 
+    font-size: 15px; 
+    line-height: 15px; 
+    padding: 7px; 
+    border-radius: 14px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+    
+.myButton:hover {
+    background: #1C6EA4;
+}
+.myButton:active {
+    background: #144E75;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+  
+.column {
+    flex-basis: 50%;
+    margin-left: 70px;
+}
+
+.example {
+    margin-left: 230px;
+}
+
+footer {
+    margin: 0px;
+    height: 75px;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    border-top: 2px black solid;
+}
+
+textarea {
+    border: 3px solid #1C6EA4;
+}
+
+select {
+    border: 3px solid #1C6EA4;
+}
+
